@@ -2,37 +2,6 @@
 layout: default
 title: Publications
 ---
-/* ======== SECTION TITLE WITH ORANGE-RED GRADIENT BAR ======== */
-.team-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin: 35px 0 24px;
-  padding-left: 16px;
-  position: relative;
-}
-
-.team-title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 4px;
-  width: 6px;
-  height: 22px;
-  border-radius: 3px;
-  background: linear-gradient(180deg, #ff9a3c, #ff4e50, #ff3a2f);
-  animation: glow 3s ease-in-out infinite;
-}
-
-@keyframes glow {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(1.55); }
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  gap: 26px;
-}
 
 <style>
 .page-title { display: none !important; }

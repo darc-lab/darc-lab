@@ -11,6 +11,7 @@ title: Announcements
     font-family: 'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
+  /* Timeline Styles */
   .news-card {
     position: relative;
     padding-left: 30px;
@@ -108,6 +109,48 @@ title: Announcements
     color: #d73a49;
     font-weight: bold;
   }
+
+  /* Join Us Section Style */
+  .join-us-card {
+    background: linear-gradient(135deg, #0366d6 0%, #003d80 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 4px 15px rgba(3, 102, 214, 0.2);
+  }
+
+  .join-us-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .join-us-text {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .apply-button {
+    display: inline-block;
+    background-color: #ffd33d;
+    color: #24292e !important;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  }
+
+  .apply-button:hover {
+    transform: translateY(-3px);
+    background-color: #ffdf71;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
 </style>
 
 <div class="news-container">
@@ -118,7 +161,7 @@ title: Announcements
     <div class="news-content">
       <div class="news-text">
         <p class="lab-open">다르크 연구실 그랜드 오픈 ~ !</p>
-        <p>Welcome to our official website！</p>
+        <p>Welcome to our official website!</p>
       </div>
     </div>
   </div>
@@ -162,6 +205,17 @@ title: Announcements
         <img src="/darc-lab/assets/images/news/HCLT2025.png" alt="HCLT 2025 Award Ceremony">
       </div>
     </div>
+  </div>
+
+  <div class="join-us-card">
+    <div class="join-us-title">🤝 Join DARC Lab!</div>
+    <div class="join-us-text">
+      We are always looking for passionate researchers and students.<br>
+      우리 연구실은 열정적인 연구원과 학생들을 기다리고 있습니다.
+    </div>
+    <a href="https://forms.gle/pbz3sVViLigopWZy7" target="_blank" class="apply-button">
+      Apply for Lab Membership
+    </a>
   </div>
 
 </div>

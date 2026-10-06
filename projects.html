@@ -5,620 +5,745 @@ title: Projects
 
 <style>
 /* ========================= GLOBAL LAYOUT ========================= */
+
 .projects-container {
-  max-width: 1050px;
-  margin: 40px auto;
+  max-width: 1250px;
+  margin: 35px auto 60px auto;
+  padding: 0 18px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0 12px;
 }
 
-/* ========================= YEAR ACCORDION ========================= */
-.accordion {
+/* ========================= PROJECT LIST ========================= */
+
+.projects-list {
+  background: #ffffff;
   border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 32px;
+  padding: 12px 32px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.accordion-header {
-  background: #f7f9fc;
-  padding: 18px 24px;
-  font-size: 20px;
-  font-weight: 650;
-  cursor: pointer;
-  border-bottom: 1px solid #e5e8ec;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* ========================= PROJECT ITEM ========================= */
 
-.accordion-header:hover {
-  background: #eef3fa;
-}
-
-.accordion-content {
-  display: none;
-  background: white;
-  padding: 24px 26px;
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ========================= PROJECT CARDS ========================= */
 .project-item {
-  margin-bottom: 20px;
   padding: 18px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eceff2;
 }
 
 .project-item:last-child {
   border-bottom: none;
 }
 
+/* ========================= PROJECT TITLE ========================= */
+
 .project-title {
-  font-size: 18px;
-  font-weight: 650;
-  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.project-title-en {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin-top: 3px;
+  line-height: 1.45;
 }
 
 /* ========================= META ========================= */
+
 .project-meta {
-  font-size: 14px;
-  color: #444;
+  font-size: 13px;
+  color: #666;
   line-height: 1.55;
 }
 
-/* ========================= CATEGORY TAGS ========================= */
-.tag {
-  display: inline-block;
-  padding: 3px 9px;
-  font-size: 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  margin-right: 8px;
+.project-agency {
+  margin-right: 14px;
 }
 
-.tag-gov { background: #eaf4ff; color: #0b63c5; }
-.tag-academic { background: #f2e8ff; color: #7b2cc7; }
-.tag-private { background: #fff3d9; color: #ca7a00; }
+/* ========================= MOBILE ========================= */
 
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 0 12px;
+    margin-top: 25px;
+  }
+
+  .projects-list {
+    padding: 8px 20px;
+  }
+
+  .project-item {
+    padding: 16px 0;
+  }
+
+  .project-title {
+    font-size: 15px;
+  }
+
+  .project-title-en {
+    font-size: 13px;
+  }
+
+  .project-meta {
+    font-size: 12.5px;
+  }
+}
 </style>
 
-<script>
-function toggleAccordion(id) {
-  var content = document.getElementById(id);
-  content.style.display = (content.style.display === "block") ? "none" : "block";
-}
-</script>
 
 <div class="projects-container">
 
-<div class="accordion">
-  <div class="accordion-header" onclick="toggleAccordion('y2026')">
-    2026 Projects <span>▼</span>
-  </div>
-  <div class="accordion-content" id="y2026">
+  <div class="projects-list">
+
+
+    <!-- ==================== 2026.09 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        20세기 초 한국어 학습서 아카이브 구축과 언어·문화의 사적 고찰 <br>
-        (Historical Analysis of Language and Culture through Archiving Korean Textbooks for Foreigners in the Early 20th Century)
+        벤치마크 데이터 제작
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국연구재단 <br>
-        Duration: 2026.03–2027.02
+        <span class="project-agency">🏛️ Agency: 업스테이지</span>
+        <span>Duration: 2026.09–2026.11</span>
       </div>
     </div>
 
+
+    <!-- ==================== 2026.04 ==================== -->
+
     <div class="project-item">
       <div class="project-title">
-        개인 맞춤형 국어생활종합상담 서비스를 위한 한국어 지식 연계 AI 에이전트 개발 <br>
-        (Development of an AI Agent Integrating Korean Language Knowledge for Personalized Language Consultation Services)
+        개인 맞춤형 국어생활종합상담 서비스를 위한 한국어 지식 연계 AI 에이전트 개발
       </div>
+
+      <div class="project-title-en">
+        Development of an AI Agent Integrating Korean Language Knowledge for Personalized Language Consultation Services
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국콘텐츠진흥원 <br>
-        Duration: 2026.04–2026.12
+        <span class="project-agency">🏛️ Agency: 한국콘텐츠진흥원</span>
+        <span>Duration: 2026.04–2026.12</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2026.03 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        20세기 초 한국어 학습서 아카이브 구축과 언어·문화의 사적 고찰
+      </div>
+
+      <div class="project-title-en">
+        Historical Analysis of Language and Culture through Archiving Korean Textbooks for Foreigners in the Early 20th Century
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 한국연구재단</span>
+        <span>Duration: 2026.03–2027.02</span>
+      </div>
+    </div>
+
 
     <div class="project-item">
       <div class="project-title">
         2026년 인공지능 말평 운영 및 연계 행사 개최
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2026.03–2026.12
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2026.03–2026.12</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2026.01 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        멀티모달형 AI 기반 개인정보 탐지·추적 및 비식별화 기술 개발 <br>
-        (Development of multimodal AI-based personal information detection, tracking, and de-identification technology)
+        멀티모달형 AI 기반 개인정보 탐지·추적 및 비식별화 기술 개발
       </div>
+
+      <div class="project-title-en">
+        Development of multimodal AI-based personal information detection, tracking, and de-identification technology
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국인터넷진흥원 <br>
-        Duration: 2026.01–2026.12
+        <span class="project-agency">🏛️ Agency: 한국인터넷진흥원</span>
+        <span>Duration: 2026.01–2026.12</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
-        범죄 의심 정보 내 개인정보 비식별화 기술 개발 <br>
-        (Development of Pseudonymization Technology for Suspected Criminal Information)
+        범죄 의심 정보 내 개인정보 비식별화 기술 개발
       </div>
+
+      <div class="project-title-en">
+        Development of Pseudonymization Technology for Suspected Criminal Information
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 정보통신기획평가원(한국연구재단부설) <br>
-        Duration: 2026.01–2026.12
+        <span class="project-agency">🏛️ Agency: 정보통신기획평가원(한국연구재단부설)</span>
+        <span>Duration: 2026.01–2026.12</span>
       </div>
     </div>
 
-  </div>
-</div>
 
-<div class="accordion">
-  <div class="accordion-header" onclick="toggleAccordion('y2025')">
-    2025 Projects <span>▼</span>
-  </div>
-  <div class="accordion-content" id="y2025">
+    <!-- ==================== 2025.11 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        산업 AI 전환을 위한 확장 가능한 멀티모달 생성용 파운데이션 모델 데이터 <br>
-        (Developing a Domain-Extensible foundation models for multimodal generation to drive industrial AI transformation)
+        포스트휴먼 시대의 공존‧공생을 위한 AI의 사회적 편향 성찰 및 개선 연구
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국지능정보사회진흥원 <br>
-        Duration: 2025.08–2025.12
+        <span class="project-agency">🏛️ Agency: 연세대학교 AI혁신연구원</span>
+        <span>Duration: 2025.11–2026.11</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
-        2025년 한국어 학습자 말뭉치 구축 <br>
-        (2025 Project on the Construction of the Korean Language Learner Corpus)
+        AI는 사람만큼 눈치가 있을까? AI의 간접 화행 능력 평가를 위한 다국어 Cross-5 벤치마크 개발 연구
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2025.06–2025.12
+        <span class="project-agency">🏛️ Agency: 연세대학교 AI혁신연구원</span>
+        <span>Duration: 2025.11–2026.11</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2025.08 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        2025년 지시문 기반 첨삭 지원 말뭉치 연구 분석 <br>
-        (2025 Research on the Construction of Instruction Corpus for writing editing support(Orthography and Norms))
+        산업 AI 전환을 위한 확장 가능한 멀티모달 생성용 파운데이션 모델 데이터
       </div>
+
+      <div class="project-title-en">
+        Developing a Domain-Extensible foundation models for multimodal generation to drive industrial AI transformation
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2025.05–2025.12
+        <span class="project-agency">🏛️ Agency: 한국지능정보사회진흥원</span>
+        <span>Duration: 2025.08–2025.12</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2025.05 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        멀티모달형 AI 기반 개인정보 탐지·추적 및 비식별화 기술 개발 <br>
-        (Development of multimodal AI-based personal information detection, tracking, and de-identification technology)
+        2025년 지시문 기반 첨삭 지원 말뭉치 연구 분석
       </div>
+
+      <div class="project-title-en">
+        2025 Research on the Construction of Instruction Corpus for Writing Editing Support (Orthography and Norms)
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국인터넷진흥원 <br>
-        Duration: 2025.04–2025.12
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2025.05–2025.12</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2025.04 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        범죄 의심 정보 내 개인정보 비식별화 기술 개발 <br>
-        (Development of Pseudonymization Technology for Suspected Criminal Information)
+        멀티모달형 AI 기반 개인정보 탐지·추적 및 비식별화 기술 개발
       </div>
+
+      <div class="project-title-en">
+        Development of multimodal AI-based personal information detection, tracking, and de-identification technology
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 정보통신기획평가원(한국연구재단부설) <br>
-        Duration: 2025.04–2025.12
+        <span class="project-agency">🏛️ Agency: 한국인터넷진흥원</span>
+        <span>Duration: 2025.04–2025.12</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
-        20세기 초 한국어 학습서 아카이브 구축과 언어·문화의 사적 고찰 <br>
-        (Historical Analysis of Language and Culture through Archiving Korean Textbooks for Foreigners in the Early 20th Century)
+        범죄 의심 정보 내 개인정보 비식별화 기술 개발
       </div>
+
+      <div class="project-title-en">
+        Development of Pseudonymization Technology for Suspected Criminal Information
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국연구재단 <br>
-        Duration: 2025.03–2026.02
+        <span class="project-agency">🏛️ Agency: 정보통신기획평가원(한국연구재단부설)</span>
+        <span>Duration: 2025.04–2025.12</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2025.03 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        2024-2025 인공지능(AI)말평 과제 구축 및 운영 <br>
-        (Organization and Operation of the 2024-2025 AI Korean Proficiency Benchmark ("AI Malpyeong", 2nd))
+        20세기 초 한국어 학습서 아카이브 구축과 언어·문화의 사적 고찰
       </div>
+
+      <div class="project-title-en">
+        Historical Analysis of Language and Culture through Archiving Korean Textbooks for Foreigners in the Early 20th Century
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2025.01–2025.12
+        <span class="project-agency">🏛️ Agency: 한국연구재단</span>
+        <span>Duration: 2025.03–2026.02</span>
       </div>
     </div>
 
-  </div>
-</div>
 
-<div class="accordion">
-  <div class="accordion-header" onclick="toggleAccordion('y2024')">
-    2024 Projects <span>▼</span>
-  </div>
-  <div class="accordion-content" id="y2024">
+    <!-- ==================== 2025.01 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        2024-2025 인공지능(AI)말평 과제 구축 및 운영
+      </div>
+
+      <div class="project-title-en">
+        Organization and Operation of the 2024-2025 AI Korean Proficiency Benchmark ("AI Malpyeong", 2nd)
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2025.01–2025.12</span>
+      </div>
+    </div>
+
+
+    <!-- ==================== 2024.12 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         AI 안정성 평가를 위한 해외 데이터셋 현지화 방안 수립
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 정보통신기술협회 <br>
-        Duration: 2024.12–2024.12
+        <span class="project-agency">🏛️ Agency: 정보통신기술협회</span>
+        <span>Duration: 2024.12–2024.12</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2024.10 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        2024 아트코리아랩 온라인 기술용어사전 제작
+        한국형 언어 자원 데이터 생태계 모델 구축 연구
       </div>
+
+      <div class="project-title-en">
+        A Study for Establishment of Korean Language Resource Data Ecosystem Model
+      </div>
+
       <div class="project-meta">
-        Duration: 2024.10–2024.12
+        <span class="project-agency">🏛️ Agency: 연세대학교</span>
+        <span>Duration: 2024.10–2027.03</span>
       </div>
     </div>
 
-    <div class="project-item">
-      <div class="project-title">
-        한국형 언어 자원 데이터 생태계 모델 구축 연구 <br>
-        (A Study for Establishment of Korean Language Resource Data Ecosystem Model)
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 연세대학교 <br>
-        Duration: 2024.10–2027.03
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        인공지능의 한국어 능력 평가를 위한 한국형 LLM 벤치마크 개발 <br>
-        (A Study of Korean LLM Benchmark for evaluating Large Language Model’s Korean language proficiency)
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 연세대학교 <br>
-        Duration: 2024.10–2025.09
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        20세기 초 한국어 학습서 아카이브 구축과 언어·문화의 사적 고찰 <br>
-        (Historical Analysis of Language and Culture through Archiving Korean Textbooks for Foreigners in the Early 20th Century)
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 한국연구재단 <br>
-        Duration: 2024.09–2025.02
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        생성형 AI 신뢰성 평가의 실용적 접근 방안 연구 추진
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 정보통신기술협회 <br>
-        Duration: 2024.06–2024.12
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        2024년 한국어 학습자 말뭉치 구축 <br>
-        (2024 Project on the Construction of the Korean Language Learner Corpus)
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2024.05–2024.12
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        국어 AI엔진 개발
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 웅진씽크빅 <br>
-        Duration: 2024.03–2024.11
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        2024-2025 인공지능(AI)말평 과제 구축 및 운영 <br>
-        (Organization and Operation of the 2024-2025 AI Korean Proficiency Benchmark("AI Malpyeong"))
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2024.01–2024.12
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        대화형 텍스트 데이터에서 AI 기반 개인정보 탐지 및 비식별화 기술 개발 <br>
-        (Development of AI-based technology for detection and de-identification of PII (Personally Identifiable Information) with conversational text data)
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 한국인터넷진흥원 <br>
-        Duration: 2024.01–2024.12
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="accordion">
-  <div class="accordion-header" onclick="toggleAccordion('y2023')">
-    2023 Projects <span>▼</span>
-  </div>
-  <div class="accordion-content" id="y2023">
-
-    <div class="project-item">
-      <div class="project-title">
-        언어 모델 작문 평가 지침 설계 및 데이터셋 구축
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 엔씨소프트 <br>
-        Duration: 2023.12–2024.07
-      </div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-title">
-        2023년 인공지능 학습용 데이터 구축 사업-14 AI 응답 결과에 대한 품질 평가 데이터 검수
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 한국지능정보사회진흥원 <br>
-        Duration: 2023.10–2024.03
-      </div>
-    </div>
 
     <div class="project-item">
       <div class="project-title">
         인공지능의 한국어 능력 평가를 위한 한국형 LLM 벤치마크 개발
       </div>
+
+      <div class="project-title-en">
+        A Study of Korean LLM Benchmark for Evaluating Large Language Model's Korean Language Proficiency
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 연세대학교 <br>
-        Duration: 2023.10–2024.09
+        <span class="project-agency">🏛️ Agency: 연세대학교</span>
+        <span>Duration: 2024.10–2025.09</span>
       </div>
     </div>
 
+
+    <!-- ==================== 2024.09 ==================== -->
+
     <div class="project-item">
       <div class="project-title">
-        아트코리아랩 온라인 기술용어사전 제작
+        20세기 초 한국어 학습서 아카이브 구축과 언어·문화의 사적 고찰
       </div>
+
+      <div class="project-title-en">
+        Historical Analysis of Language and Culture through Archiving Korean Textbooks for Foreigners in the Early 20th Century
+      </div>
+
       <div class="project-meta">
-        Duration: 2023.07–2023.10
+        <span class="project-agency">🏛️ Agency: 한국연구재단</span>
+        <span>Duration: 2024.09–2025.02</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2024.06 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        생성형 AI 신뢰성 평가의 실용적 접근 방안 연구 추진
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 정보통신기술협회</span>
+        <span>Duration: 2024.06–2024.12</span>
+      </div>
+    </div>
+
+
+    <!-- ==================== 2024.03 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        국어 AI엔진 개발
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 웅진씽크빅</span>
+        <span>Duration: 2024.03–2024.11</span>
+      </div>
+    </div>
+
+
+    <!-- ==================== 2024.01 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        2024-2025 인공지능(AI)말평 과제 구축 및 운영
+      </div>
+
+      <div class="project-title-en">
+        Organization and Operation of the 2024-2025 AI Korean Proficiency Benchmark ("AI Malpyeong")
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2024.01–2024.12</span>
+      </div>
+    </div>
+
+
+    <div class="project-item">
+      <div class="project-title">
+        대화형 텍스트 데이터에서 AI 기반 개인정보 탐지 및 비식별화 기술 개발
+      </div>
+
+      <div class="project-title-en">
+        Development of AI-based Technology for Detection and De-identification of PII with Conversational Text Data
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 한국인터넷진흥원</span>
+        <span>Duration: 2024.01–2024.12</span>
+      </div>
+    </div>
+
+
+    <!-- ==================== 2023.12 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        언어 모델 작문 평가 지침 설계 및 데이터셋 구축
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 엔씨소프트</span>
+        <span>Duration: 2023.12–2024.07</span>
+      </div>
+    </div>
+
+
+    <!-- ==================== 2023.10 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        2023년 인공지능 학습용 데이터 구축 사업-14 AI 응답 결과에 대한 품질 평가 데이터 검수
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 한국지능정보사회진흥원</span>
+        <span>Duration: 2023.10–2024.03</span>
+      </div>
+    </div>
+
+
+    <div class="project-item">
+      <div class="project-title">
+        인공지능의 한국어 능력 평가를 위한 한국형 LLM 벤치마크 개발
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 연세대학교</span>
+        <span>Duration: 2023.10–2024.09</span>
+      </div>
+    </div>
+
+
+    <!-- ==================== 2023.07 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         초거대 언어모델 기반 대화 데이터 고도화 및 품질 평가
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 엔씨소프트 <br>
-        Duration: 2023.07–2023.12
+        <span class="project-agency">🏛️ Agency: 엔씨소프트</span>
+        <span>Duration: 2023.07–2023.12</span>
       </div>
     </div>
 
-    <div class="project-item">
-      <div class="project-title">
-        2023년 한국어 학습자 말뭉치 구축 <br>
-        (2023 Research on the Construction of Instruction Corpus for writing editing support(Orthography and Norms))
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2023.07–2024.05
-      </div>
-    </div>
+
+    <!-- ==================== 2023.05 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
-        국어능력 진단체계 활용 방안 연구 <br>
-        (Study on the Utilization Strategies of the Korean Language Proficiency Diagnostic System in 2023)
+        국어능력 진단체계 활용 방안 연구
       </div>
+
+      <div class="project-title-en">
+        Study on the Utilization Strategies of the Korean Language Proficiency Diagnostic System in 2023
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2023.05–2023.12
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2023.05–2023.12</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
         2023년 국어 기초어휘 선정 및 어휘 등급화 연구
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2023.05–2023.12
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2023.05–2023.12</span>
       </div>
     </div>
 
-    <div class="project-item">
-      <div class="project-title">
-        2023년 대화 요약 말뭉치 연구 분석 <br>
-        (Analysis of the Conversation Summary Corpus Research, 2023)
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2023.05–2023.11
-      </div>
-    </div>
 
     <div class="project-item">
       <div class="project-title">
-        2023년 인공 지능의 한국어 처리 능력 평가 체계 운영 및 평가 과제 구축 <br>
-        (Organization &amp; Consolidation of the Korean Benchmarks and Evaluation Tasks For the Language Proficiency Evaluation on Korean Artificial Intelligence in 2023)
+        2023년 대화 요약 말뭉치 연구 분석
       </div>
+
+      <div class="project-title-en">
+        Analysis of the Conversation Summary Corpus Research, 2023
+      </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2023.03–2023.12
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2023.05–2023.11</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2023.03 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        2023년 인공 지능의 한국어 처리 능력 평가 체계 운영 및 평가 과제 구축
+      </div>
+
+      <div class="project-title-en">
+        Organization &amp; Consolidation of the Korean Benchmarks and Evaluation Tasks for the Language Proficiency Evaluation on Korean Artificial Intelligence in 2023
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2023.03–2023.12</span>
+      </div>
+    </div>
+
 
     <div class="project-item">
       <div class="project-title">
         초거대 언어 모델 학습용 프롬프트 데이터 구축 연구
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 엔씨소프트 <br>
-        Duration: 2023.03–2023.05
+        <span class="project-agency">🏛️ Agency: 엔씨소프트</span>
+        <span>Duration: 2023.03–2023.05</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
         신문 텍스트 기반 어휘 자원 구축 및 AI 분석기법 연구
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 기타정부기관 <br>
-        Duration: 2023.03–2023.12
+        <span class="project-agency">🏛️ Agency: 기타정부기관</span>
+        <span>Duration: 2023.03–2023.12</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
         인공지능 학습용 다면말뭉치 구축
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 기타정부기관 <br>
-        Duration: 2023.03–2023.12
+        <span class="project-agency">🏛️ Agency: 기타정부기관</span>
+        <span>Duration: 2023.03–2023.12</span>
       </div>
     </div>
 
-    <div class="project-item">
-      <div class="project-title">
-        금융 모델 학습 및 데이터 검증 자문
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 하나은행 <br>
-        Duration: 2023.03–2024.02
-      </div>
-    </div>
+
+    <!-- ==================== 2023.01 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         대화형 텍스트 데이터에서 AI 기반 개인정보 탐지 및 비식별화 기술 개발
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국인터넷진흥원 <br>
-        Duration: 2023.01–2023.12
+        <span class="project-agency">🏛️ Agency: 한국인터넷진흥원</span>
+        <span>Duration: 2023.01–2023.12</span>
       </div>
     </div>
 
-  </div>
-</div>
 
-<div class="accordion">
-  <div class="accordion-header" onclick="toggleAccordion('y2022')">
-    2022 Projects <span>▼</span>
-  </div>
-  <div class="accordion-content" id="y2022">
-
-    <div class="project-item">
-      <div class="project-title">
-        대화형 텍스트 데이터에서 AI 기반 개인정보 탐지 및 비식별화 기술 개발
-      </div>
-      <div class="project-meta">
-        🏛️ Agency: 한국인터넷진흥 <br>
-        Duration: 2022.04–2022.12
-      </div>
-    </div>
+    <!-- ==================== 2022.10 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         한국어 교육 SW 사용성 검증 및 발음 평가 기능 실증
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 이르테크 <br>
-        Duration: 2022.10–2023.05
+        <span class="project-agency">🏛️ Agency: 이르테크</span>
+        <span>Duration: 2022.10–2023.05</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2022.08 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         영어 경제 뉴스 감성 분석을 위한 데이터 구축 방법론 설계
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 엔씨소프트 <br>
-        Duration: 2022.08–2023.01
+        <span class="project-agency">🏛️ Agency: 엔씨소프트</span>
+        <span>Duration: 2022.08–2023.01</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2022.07 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         금융,법률 문서 기계독해 데이터
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국지능정보사회진흥원 <br>
-        Duration: 2022.07–2022.12
+        <span class="project-agency">🏛️ Agency: 한국지능정보사회진흥원</span>
+        <span>Duration: 2022.07–2022.12</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2022.06 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         표 정보 질의 응답 데이터
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국지능정보사회진흥원 <br>
-        Duration: 2022.06–2022.12
+        <span class="project-agency">🏛️ Agency: 한국지능정보사회진흥원</span>
+        <span>Duration: 2022.06–2022.12</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
         2022년 회의록 요약 분석
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2022.06–2023.01
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2022.06–2023.01</span>
       </div>
     </div>
+
 
     <div class="project-item">
       <div class="project-title">
         2022년 인공지능의 언어 능력 평가 체계 운영 및 말뭉치 정비
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 국립국어원 <br>
-        Duration: 2022.06–2023.02
+        <span class="project-agency">🏛️ Agency: 국립국어원</span>
+        <span>Duration: 2022.06–2023.02</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2022.05 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         초등학교와 중학교 교육용 어휘 등급화 연구
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 한국교육과정평가원 <br>
-        Duration: 2022.05–2022.07
+        <span class="project-agency">🏛️ Agency: 한국교육과정평가원</span>
+        <span>Duration: 2022.05–2022.07</span>
       </div>
     </div>
+
+
+    <!-- ==================== 2022.04 ==================== -->
+
+    <div class="project-item">
+      <div class="project-title">
+        대화형 텍스트 데이터에서 AI 기반 개인정보 탐지 및 비식별화 기술 개발
+      </div>
+
+      <div class="project-meta">
+        <span class="project-agency">🏛️ Agency: 한국인터넷진흥</span>
+        <span>Duration: 2022.04–2022.12</span>
+      </div>
+    </div>
+
+
+    <!-- ==================== 2022.03 ==================== -->
 
     <div class="project-item">
       <div class="project-title">
         경제 뉴스 감성 분석을 위한 데이터 구축 방법론 설계
       </div>
+
       <div class="project-meta">
-        🏛️ Agency: 엔씨소프트 <br>
-        Duration: 2022.03–2022.11
+        <span class="project-agency">🏛️ Agency: 엔씨소프트</span>
+        <span>Duration: 2022.03–2022.11</span>
       </div>
     </div>
 
-  </div>
-</div>
 
+  </div>
 </div>
